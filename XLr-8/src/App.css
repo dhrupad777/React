@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e1e, #333);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  margin: 30px auto;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.main-container:hover {
+  transform: scale(1.09);
+ 
+  
+  
+}
+.main-container:hover  p {
+  animation: none 5s ease-in-out infinite;
+  color: greenyellow;
+  transform: scale(1.05)
+}
+
+.logo {
+  width: 80px;
+  animation: rotateImage 7s linear infinite;
+}
+.logo:hover {
+  width: 80px;
+  animation: rotateImage 1s linear infinite;
+}
+.main-container:hover .logo {
+  animation: rotateImage 0.8s linear infinite; /* Faster rotation on card hover */
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+  margin-right: 80px;
+  margin-left: 50px;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+.details p {
+  font-size: 14px;
+  animation: glowtext 5s ease-in-out infinite;
+  margin: 5px 0;
+}
+
+/* Rotating Animation */
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Smooth Text Glow Effect */
+@keyframes glowtext {
+  0% {
+    color: rgb(121, 174, 186);
+  }
+  50% {
+    color: rgb(0, 229, 255);
+  }
+  100% {
+    color: rgb(72, 178, 189);
+  }
+}
