@@ -4,24 +4,25 @@ import './index.css'
 import App from './App.jsx'
 import reactLogo from './assets/react.svg'
 import me from './assets/me.jpg'
+import omie from './assets/image.jpg'
 import viteLogo from '/vite.svg'
-import Objectprops from "./Objectprops.jsx"
-import jokes from "./jokesdata.js"
-import Jokes from "./Jokes.jsx"
+// import Objectprops from "./Objectprops.jsx"
+// import jokes from "./jokesdata.js"
+// import Jokes from "./Jokes.jsx"
 
 
 
 
 import { createRoot } from "react-dom/client"
 const root = createRoot(document.getElementById("root"))
-const ninja = [<h3>ll</h3>,<h3>kk</h3>];// instead of ["jj","kk"] pass in html format which react can understand
+// const ninja = [<h3>ll</h3>,<h3>kk</h3>];// instead of ["jj","kk"] pass in html format which react can understand
 root.render(
-    <>
+    // <>
 
-    <Jokes  />
+    // <Jokes  />
     
 
-    </>
+    // </>
     // <>
 
 
@@ -44,8 +45,8 @@ root.render(
     //     buy:"1000"
     // }}
     // />
-
-        {/* <App
+    <>
+             <App
             photo={reactLogo}
             profile={me}
             name="Dhrupad Rajpurohit"
@@ -58,15 +59,18 @@ root.render(
         />
         <App
             photo={reactLogo}
-            profile={me}
-            name="John Doe2"
-            email="johndoe@example.com2"
-            phone="+12345678902"
-            address="123 React Street, JavaScript City2"
+            profile={omie}
+            name="Omkar Mane"
+            email="omiekaemil@gmail.com"
+            phone="Omie ka NUmber"
+            address="504 - A"
             comments={[
                 {mentor:"kk",exp:7}
-            ]}
-        /> */}
+            ]}/>
+    </>
+
+
+         
 
 
     
