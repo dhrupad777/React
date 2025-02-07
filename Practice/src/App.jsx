@@ -1,35 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import dino from "./jokesdata.js"
+import Quizcard from "./Quizcard.jsx"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+const dinoquiz = dino.map((dinos)=>{
+    return <Quizcard
+    
+    // que = {dinos.question}
+    // ans = {dinos.answer} So belo we are just passing all through data, and id is needed to help react know if elements are added or deleted to refrence with something(the database data should have id but is not we add them)
+    key = {dinos.id} // never remove this see 
+    // data ={dinos}//this is used to pass "data" as the mapped array  so in Quizcard.jsx we will write props.data.id
+    {...dinos} //this is used to pass the whole object as a prop with its properteis so in Quizcard.jsx we will write props.id
+    
+    />
+})
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+
+        { /* Remove the comment and enable dinoquiz to see hoe "MAPPING IS DONE BY .map() on components from a source to our desired format to a array of that format is rendered(dinoquiz)"  */                }
+         {dinoquiz}
+
+
+
+        </>
+    )
 }
-
-export default App
