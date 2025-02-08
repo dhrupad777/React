@@ -1,0 +1,16 @@
+*{
+    /* margin: 0px;
+    padding: 0px; */
+    /* box-sizing: border-box; */
+}
+
+.content{
+    /* background-color: rgb(153, 153, 237); */
+    margin: 0px;
+    height: 100%;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for hover effect */
+    padding: 25px;
+}
+.content:hover {
+    background-color: #ffc688; /* Change background color on hover */
+}

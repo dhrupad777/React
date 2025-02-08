@@ -1,5 +1,6 @@
 // 
-import Head from "./Header"
+import Head from "./Components/Header"
+import C from "./Content"
 import "./Chef.css"
 
 export default function Chef(){
@@ -9,7 +10,7 @@ export default function Chef(){
 
 <div className="container">
         <Head />
-        
+        <C />
 </div>
 
 

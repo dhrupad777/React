@@ -1,11 +1,20 @@
-.header{
+.header {
     display: flex;
-    justify-content: space-around;
-    box-shadow: 0px 1.5px 1.5px 1.5px rgb(153, 150, 150);
-    border-radius: 16px;
+    justify-content: center;
+    margin: 0px;
+    background-color: #f0f0f0;
+    border-radius: 16px 16px 0px 0px ;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.5s ease-in-out; /* Smooth transition for hover effect */
 }
 
-.logo{
-    width: 150px;
+.header:hover {
+    background-color: #ffc688; /* Change background color on hover */
+}
+
+.logo {
+    width: 80px;
+    margin: 10px;
+    /* margin: 15px; */
    
 }
