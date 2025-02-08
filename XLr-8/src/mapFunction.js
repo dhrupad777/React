@@ -1,4 +1,4 @@
-const names = ["dhrupad","Neel","heer","vedant"];
+const names = ["dhrupad","Neel","heer","Vedant"];
 const lowercase = names.map( name => name[0].toLowerCase() + name.slice(1))
 console.log(lowercase)
 

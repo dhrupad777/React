@@ -1,11 +1,13 @@
 import { createRoot } from "react-dom/client"
 const root = createRoot(document.getElementById("root"))
 import App from "./App"
+import Chef from "./Chef.jsx"
 
 root.render(
 
 <>
-<App />
+{/* <App /> */}
+<Chef />
 
 
 </>

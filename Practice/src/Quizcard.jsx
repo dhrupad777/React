@@ -10,10 +10,10 @@ export default function Quizcard(props){
 
 
 <h1 id="que">
-    {props.question}
+    {props.data.question}
 </h1>
 <h1 id="ans">
-    {props.answer}
+    {props.data.answer}
 </h1>
 
 
