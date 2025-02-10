@@ -1,20 +1,13 @@
-// 
-import Head from "./Components/Header"
-import C from "./Content"
-import "./Chef.css"
+import React from "react";
+import Header from "./Components/Header";
+import Content from "./Content";
+import "./Chef.css";
 
-export default function Chef(){
-    return(
-<>
-
-
-<div className="container">
-        <Head />
-        <C />
-</div>
-
-
-</>
-
-    )
+export default function Chef() {
+    return (
+        <div className="container">
+            <Header />
+            <Content />
+        </div>
+    );
 }

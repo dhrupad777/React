@@ -1,16 +1,103 @@
-*{
-    /* margin: 0px;
-    padding: 0px; */
-    /* box-sizing: border-box; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.content{
-    /* background-color: rgb(153, 153, 237); */
-    margin: 0px;
-    height: 100%;
-    transition: background-color 0.5s ease-in-out; /* Smooth transition for hover effect */
-    padding: 25px;
+/* Main container */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
+
+/* Content Section */
+.content {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: background 0.3s ease-in-out;
+}
+
 .content:hover {
-    background-color: #ffc688; /* Change background color on hover */
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+}
+
+/* Form Styling */
+.addItem {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.addItem input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.addItem input:focus {
+    border-color: #6a11cb;
+}
+
+/* Button */
+.addItem button {
+    padding: 12px 20px;
+    border: none;
+    background: #2575fc;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addItem button:hover {
+    background: #6a11cb;
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+}
+
+ul li:hover {
+    background: #f4f4f4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .addItem {
+        flex-direction: column;
+    }
+
+    .addItem input,
+    .addItem button {
+        width: 100%;
+    }
 }
