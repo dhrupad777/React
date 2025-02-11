@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Components/Header";
-import Content from "./Content";
+import Content from "./Components/Content";
 import "./Chef.css";
 
 export default function Chef() {
