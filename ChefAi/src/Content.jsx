@@ -12,6 +12,7 @@ export default function Content() {
 
         if (newItem.trim()) {
             setItems((prevItems) => [...prevItems, newItem]);
+            
         }
 
         e.currentTarget.reset();
