@@ -9,14 +9,14 @@ export default function Content() {
     const [error, setError] = useState("");
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
-        const newItem = formData.get("item");
+        
+        
+        const newItem = e.get("item");
 
         if (newItem.trim()) {
             setItems((prevItems) => [...prevItems, newItem]);
         }
-        e.currentTarget.reset();
+        
     };
 
     const generateRecipes = async () => {
@@ -51,7 +51,7 @@ export default function Content() {
 
     return (
         <div className="content">
-            <form onSubmit={handleSubmit} className="addItem">
+            <form action={handleSubmit} className="addItem">
                 <input
                     type="text"
                     placeholder="e.g. Fresh Basil"
