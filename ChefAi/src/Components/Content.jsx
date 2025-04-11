@@ -1,5 +1,5 @@
 // Content.js
-import React, { useState } from "react";
+import  { useState } from "react";
 import "../Content.css";
 
 export default function Content() {

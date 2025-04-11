@@ -25,6 +25,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-direction: column;
 }
 
 .header:hover {
@@ -33,13 +34,13 @@ body {
 }
 
 .logo {
-    width: 60px; /* Resized icon */
+    width: 30px; /* Resized icon */
     height: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .logo:hover {
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(360deg) scale(2.5);
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
 }
 
